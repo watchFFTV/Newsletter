@@ -3,70 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFTV Newsletter</title>
+    <title>FFTV</title>
     <style>
         body {
-            background-color: #0d021f;
-            color: #ffffff;
+            margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #0D021F;
+            color: #E5D4FF;
+        }
+        header {
+            background-color: #200A40;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: #3A1B63;
+        }
+        nav a {
+            color: #E5D4FF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             padding: 20px;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: #1a0e33;
+        .about, .contact {
+            max-width: 800px;
+            margin: 20px;
             padding: 20px;
+            background: #260F45;
             border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.3);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
         }
-        .image-container img {
+        input, textarea {
             width: 100%;
-            border-radius: 10px;
-        }
-        .content {
-            padding: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #a100f2;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(161, 0, 242, 0.5);
-            transition: 0.3s;
         }
-        .btn:hover {
-            background-color: #7a00b8;
-        }
-        table {
-            width: 100%;
-            border-spacing: 20px;
+        button {
+            padding: 10px 20px;
+            background-color: #6A1B9A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+    <header>FFTV - Tattoo, Culture & Art</header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
-        <table>
-            <tr>
-                <td class="image-container">
-                    <img src="https://github.com/watchFFTV/Newsletter/blob/main/UYS%20WITH%20GRACE%20THUMNAIL.png?raw=true" alt="FFTV Image">
-                </td>
-            </tr>
-            <tr>
-                <td class="content">
-                    <p>Your latest updates and exciting news go here. Stay tuned for more amazing content from FFTV!</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://your-website.com" class="btn">Visit FFTV</a>
-                </td>
-            </tr>
-        </table>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Welcome to FFTV, where tattoo culture meets art, music, and raw creativity. From interviews with industry legends to uncovering unique tattoo stories, we bring you content that matters.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </div>
 </body>
 </html>
